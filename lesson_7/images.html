@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes en HTML</title>
+</head>
+<body>
+    <h1>Tratamiento de Imágenes en HTML</h1>
+    <p>En HTML, las imágenes se insertan utilizando la etiqueta <code>&lt;img&gt;</code>. Esta etiqueta es un elemento vacío, lo que significa que no tiene una etiqueta de cierre.</p>
+    <h2>Atributos comunes de la etiqueta &lt;img&gt;:</h2>
+    <ul>
+        <li><strong>src:</strong> Especifica la ruta de la imagen.</li>
+        <li><strong>alt:</strong> Proporciona un texto alternativo para la imagen en caso de que no se pueda cargar.</li>
+        <li><strong>width:</strong> Define el ancho de la imagen.</li>
+        <li><strong>height:</strong> Define la altura de la imagen.</li>
+    </ul>
+    <hr>
+    <h2>Ejemplo:</h2>
+    <p>A continuación, se muestra un ejemplo de cómo insertar una imagen:</p>
+    <pre> <!-- Esta etiqueta es utilizada para mostrar texto preformateado -->
+        <code> <!-- Esta etiqueta es utilizada para insertar texto en formato de código -->
+            &lt;img src="ruta-de-la-imagen.jpg" alt="Descripción de la imagen" width="300" height="200"&gt; <!-- Ejemplo de etiqueta img -->
+        </code>
+    </pre> 
+    <p>Es importante asegurarse de que las imágenes sean accesibles y tengan un texto alternativo descriptivo.</p>
+    <hr>
+    <h2>Existen 2 formas de agregar imágenes en HTML</h2>
+    <section>
+        <p>Con la etiqueta &lt;img&gt;</p>
+        <img src="../mi_perfil.jpg" alt="Foto de perfil" title="Foto de perfil" width="200" height="200" style="border-radius: 50%;" loading="lazy"> <!-- Con esta etiqueta podemos agregar una imagen al documento HTML, pero consume mucho renderizado. --> 
+        <!-- El atributo loading="lazy" permite que la imagen se cargue solo cuando el usuario la vea, esto mejora el rendimiento de la página -->
+    </section>
+    <hr>
+    <section>
+        <p>Con la etiqueta &lt;picture&gt;</p> 
+        <picture style="border: solid black 2px;"> <!-- Con esta etiqueta podemos agregar una imagen al documento HTML, pero con diferentes resoluciones y sources  -->
+            <source srcset="../mi_perfil.jpg" media="(min-width: 320px)"> <!-- Con esto se puede definir el ancho mínimo, muy utilizado en responsive design-->
+            <img src="../mi_perfil.jpg" alt="Foto de perfil" title="Foto de perfil" width="200" height="200" style="border-radius: 50%;" loading="lazy"> <!-- Con esta etiqueta podemos agregar una imagen al documento HTML, pero consume mucho renderizado. -->
+        </picture>
+    </section>
+    <hr>
+    <section>
+        <p>Haciendo uso de la etiqueta &lt;figure&gt; &lt;/figure&gt;</p>
+        <figure style="border: solid black 2px;">
+            <img src="../mi_perfil.jpg" alt="Foto de perfil" title="Foto de perfil" width="200" height="200" style="border-radius: 50%; border: solid black 2px;" loading="lazy"> <!-- Con esta etiqueta podemos agregar una imagen al documento HTML, pero consume mucho renderizado. -->
+            <figcaption>Foto de perfil</figcaption>
+        </figure>
+    </section>
+</body>
+</html>
