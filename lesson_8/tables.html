@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas en HTML</title>
+</head>
+<body>
+    <h1>Tablas en HTML</h1>
+    <table> <!-- Añadir borde a la tabla, y con la etiqueta <table></table> -->
+        <caption>Ejemplo de una tabla</caption> <!-- Añadir título a la tabla, y con la etiqueta <caption></caption> -->
+        <thead style="background-color: aqua;"> <!-- Encabezado de la tabla, y con la etiqueta <thead></thead> -->
+            <tr> <!-- Fila de la tabla, y con la etiqueta <tr></tr> -->
+                <th>Nombre</th> <!-- Celda de la tabla, y con la etiqueta <th></th> -->
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead> <!-- Fin del encabezado de la tabla -->
+        <tbody style="background-color: antiquewhite;"> <!-- Cuerpo de la tabla, y con la etiqueta <tbody></tbody>, table body -->
+            <tr> <!-- Fila de la tabla, taable row -->
+                <td>Juan</td> <!-- Celda de la tabla, table data -->
+                <td>25</td>
+                <td>Madrid</td>
+            </tr>
+            <tr> <!-- Fila de la tabla -->
+                <td>María</td> <!-- Celda de la tabla -->
+                <td>30</td>
+                <td>Barcelona</td>
+            </tr>
+            <tr> <!-- Fila de la tabla -->
+                <td>Carlos</td> <!-- Celda de la tabla -->
+                <td>28</td>
+                <td>Valencia</td>
+            </tr>
+        </tbody> <!-- Fin del cuerpo de la tabla -->
+        <tfoot style="background-color: azure;"> <!-- Pie de la tabla, y con la etiqueta <tfoot></tfoot> -->
+            <tr> <!-- Fila de la tabla -->
+                <td colspan="3">Fin de la tabla</td> <!-- Celda de la tabla, y con el atributo colspan="3", la propiedad colspan permite unir columnas. -->
+            </tr>
+        </tfoot> <!-- Fin del pie de la tabla -->
+    </table> <!-- Fin de la tabla -->
+</body>
+</html>
