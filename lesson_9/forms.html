@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+    <!-- Título principal del formulario -->
+    <h1>Formularios en HTML</h1> 
+
+    <!-- El método POST, es utilizado para enviar datos de forma oculta en el cuerpo de la solicitud. -->
+    <!-- El método GET, es utilizado para enviar datos de forma visible y es más limita en cuestión de longitud. -->
+
+    <!-- Inicio del formulario -->
+    <form action="https://httpbin.org/get" method="get"> <!-- Formulario que se enviará a la ruta "/submit-form" con el método POST -->
+        <!-- Campo para ingresar el nombre -->
+        <label for="name">Nombre:</label> <!-- Etiqueta para añadir texto informativo, suele ser útil para la Accesibilidad -->
+        <input type="text" id="name" name="name" required> <!-- Campo de texto para ingresar el nombre, el atributo "required" indica que es un campo obligatorio -->
+        <br><br> <!-- Salto de línea -->
+
+        <!-- Campo para ingresar el correo electrónico -->
+        <label for="email">Correo Electrónico:</label> <!-- Etiqueta para añadir texto informativo, suele ser útil para la Accesibilidad -->
+        <input type="email" id="email" name="email" required> <!-- Campo de texto para ingresar el correo electrónico, el atributo "required" indica que es un campo obligatorio -->
+        <br><br>
+
+        <!-- Campo para ingresar la contraseña -->
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required> <!-- Campo de texto para ingresar la contraseña, el atributo "required" indica que es un campo obligatorio -->
+        <br><br>
+
+        <!-- Menú desplegable para seleccionar el género -->
+        <label for="gender">Género:</label> <!-- Etiqueta para añadir texto informativo, suele ser útil para la Accesibilidad -->
+        <select id="gender" name="gender"> <!-- Menú desplegable para seleccionar el género, se crea con la etiqueta select. -->
+            <option value="male">Masculino</option> <!-- Opción para seleccionar el género masculino, con la etiqueta option. -->
+            <option value="female">Femenino</option> <!-- Opción para seleccionar el género femenino, con la etiqueta option. -->
+            <option value="other">Otro</option> <!-- Opción para seleccionar otro género, con la etiqueta option. -->
+        </select>
+        <br><br> <!-- Salto de línea -->
+
+        <!-- Área de texto para comentarios -->
+        <label for="comments">Comentarios:</label> <!-- Etiqueta para añadir texto informativo, suele ser útil para la Accesibilidad -->
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea> <!-- Área de texto para ingresar comentarios, se crea con la etiqueta textarea. -->
+        <br><br> <!-- Salto de línea -->
+
+        <!-- Casilla de verificación para aceptar términos y condiciones -->
+        <label> 
+            <input type="checkbox" name="terms" required> <!-- Casilla de verificación para aceptar términos y condiciones, se crea con la etiqueta input y el atributo type="checkbox". -->    
+            Acepto los términos y condiciones
+        </label>
+        <br><br> <!-- Salto de línea -->
+                <!-- Botón de opción para seleccionar el idioma -->
+        <label> <!-- Etiqueta para añadir texto informativo, suele ser útil para la Accesibilidad -->
+            Idioma:
+            <input type="radio" name="language" value="spanish" required> <!-- Botón de opción para seleccionar el idioma español, se crea con la etiqueta input y el atributo type="radio". -->
+            Español
+            <input type="radio" name="language" value="english" required> <!-- Botón de opción para seleccionar el idioma inglés, se crea con la etiqueta input y el atributo type="radio". -->
+            Inglés
+        </label>
+        <br><br> <!-- Salto de línea -->
+
+        <!-- Botones para enviar o restablecer el formulario -->
+        <button type="submit">Enviar</button> <!-- Botón para enviar el formulario, se crea con la etiqueta button y el atributo type="submit". -->
+        <button type="reset">Restablecer</button> <!-- Botón para restablecer el formulario, se crea con la etiqueta button y el atributo type="reset". -->
+    </form> <!-- Fin del formulario -->
+</body>
+</html>

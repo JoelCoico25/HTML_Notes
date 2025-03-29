@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos en HTML</title>
+</head>
+<body>
+    <video controls width="640" height="360"> <!-- Video element with controls for play, pause, and volume -->
+        <source src="video.mp4" type="video/mp4"> <!-- MP4 video source -->
+        <source src="video.ogg" type="video/ogg"> <!-- OGG video source -->
+        <source src="video.webm" type="video/webm"> <!-- WebM video source -->
+        <!-- Fallback content for browsers that do not support the video element -->
+        <p>Your browser does not support the video tag.</p> <!-- Message displayed if the video cannot be played -->
+    </video>
+</body>
+</html>

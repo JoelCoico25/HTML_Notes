@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio en HTML</title>
+</head>
+<body>
+    <h1>Audio Handling in HTML</h1>
+    <p>HTML provides the <code>&lt;audio&gt;</code> element to embed audio content in web pages. You can include controls for play, pause, and volume adjustment.</p>
+
+    <h2>Example:</h2>
+    <audio controls>
+        <source src="example-audio.mp3" type="audio/mpeg">
+        <source src="example-audio.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <p>Attributes of the <code>&lt;audio&gt;</code> element:</p>
+    <ul>
+        <li><strong>controls</strong>: Adds play, pause, and volume controls.</li>
+        <li><strong>autoplay</strong>: Starts playing the audio automatically (not recommended for user experience).</li>
+        <li><strong>loop</strong>: Makes the audio loop continuously.</li>
+        <li><strong>muted</strong>: Starts the audio in a muted state.</li>
+    </ul>
+</body>
+</html>
